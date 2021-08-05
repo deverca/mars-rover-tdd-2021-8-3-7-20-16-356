@@ -13,10 +13,17 @@ public class MarsRover {
             move();
         } else if ("L".equals(command)) {
             turnLeft();
+        } else if ("R".equals(command)) {
+            turnRight();
         }
     }
 
-
+    private void turnRight() {
+        final int locationX = roverStatus.getLocationX();
+        final int locationY = roverStatus.getLocationY();
+        final String direction = roverStatus.getDirection();
+        roverStatus.setDirection("E");
+    }
     private void turnLeft() {
         final int locationX = roverStatus.getLocationX();
         final int locationY = roverStatus.getLocationY();
