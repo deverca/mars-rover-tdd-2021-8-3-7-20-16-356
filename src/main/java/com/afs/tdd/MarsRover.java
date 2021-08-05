@@ -1,5 +1,8 @@
 package com.afs.tdd;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MarsRover {
 
     private RoverStatus roverStatus;
@@ -18,8 +21,10 @@ public class MarsRover {
         }
     }
 
-    public void executeCommands(String roverStatus) {
-
+    public void executeCommands(String commands) {
+        for (char command : commands.toCharArray()) {
+            executeCommand(String.valueOf(command));
+        }
     }
 
     private void turnRight() {
@@ -32,6 +37,8 @@ public class MarsRover {
             roverStatus.setDirection("W");
         } else if ("E".equals(roverStatus.getDirection())) {
             roverStatus.setDirection("S");
+        }else if ("W".equals(roverStatus.getDirection())) {
+            roverStatus.setDirection("N");
         }
     }
 
