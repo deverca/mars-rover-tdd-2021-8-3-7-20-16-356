@@ -37,6 +37,8 @@ public class MarsRover {
             roverStatus.setDirection("W");
         } else if ("S".equals(roverStatus.getDirection())) {
             roverStatus.setDirection("E");
+        } else if ("E".equals(roverStatus.getDirection())) {
+            roverStatus.setDirection("N");
         }
     }
 
