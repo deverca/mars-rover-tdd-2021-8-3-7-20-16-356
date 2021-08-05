@@ -22,4 +22,16 @@ public class RoverStatus {
     public String getDirection() {
         return direction;
     }
+
+    public void setLocationX(int locationX) {
+        this.locationX = locationX;
+    }
+
+    public void setLocationY(int locationY) {
+        this.locationY = locationY;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
 }

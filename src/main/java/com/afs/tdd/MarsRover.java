@@ -8,10 +8,21 @@ public class MarsRover {
         this.roverStatus = roverStatus;
     }
 
-    public void executeCommand(String command){
+    public void executeCommand(String command) {
+        if (command.equals("M")) {
+            move();
+        }
+    }
+
+    private void move() {
+        final int locationX = roverStatus.getLocationX();
+        final int locationY = roverStatus.getLocationY();
+        final String direction = roverStatus.getDirection();
+        roverStatus.setLocationY(locationY + 1);
     }
 
     public RoverStatus getRoverStatus() {
-        return null;
+        return roverStatus;
     }
+
 }
