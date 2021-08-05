@@ -16,6 +16,7 @@ public class MarsRover {
         }
     }
 
+
     private void turnLeft() {
         final int locationX = roverStatus.getLocationX();
         final int locationY = roverStatus.getLocationY();
