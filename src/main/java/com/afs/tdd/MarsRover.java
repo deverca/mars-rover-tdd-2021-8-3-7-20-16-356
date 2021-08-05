@@ -26,7 +26,7 @@ public class MarsRover {
             roverStatus.setDirection("E");
         } else if ("S".equals(roverStatus.getDirection())) {
             roverStatus.setDirection("W");
-        }else if ("E".equals(roverStatus.getDirection())) {
+        } else if ("E".equals(roverStatus.getDirection())) {
             roverStatus.setDirection("S");
         }
     }
@@ -54,6 +54,8 @@ public class MarsRover {
             roverStatus.setLocationY(locationY - 1);
         } else if ("E".equals(roverStatus.getDirection())) {
             roverStatus.setLocationX(locationX + 1);
+        } else if ("W".equals(roverStatus.getDirection())) {
+            roverStatus.setLocationX(locationX - 1);
         }
     }
 
