@@ -48,6 +48,8 @@ public class MarsRover {
             roverStatus.setLocationY(locationY + 1);
         } else if ("S".equals(roverStatus.getDirection())) {
             roverStatus.setLocationY(locationY - 1);
+        } else if ("E".equals(roverStatus.getDirection())) {
+            roverStatus.setLocationX(locationX + 1);
         }
     }
 
